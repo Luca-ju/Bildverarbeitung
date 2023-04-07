@@ -38,7 +38,7 @@ class Ui_MainWindow(object):
         self.label_2.setObjectName("label_2")
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 1030, 20))
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 1030, 37))
         self.menubar.setObjectName("menubar")
         self.menuFile = QtWidgets.QMenu(self.menubar)
         self.menuFile.setObjectName("menuFile")
