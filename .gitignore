@@ -1,13 +1,8 @@
-.env
-.venv
-/Bildverarbeitung23
-Bildverarbeitung23
 .Bildverarbeitung23
+.venv
 env/
-Bildverarbeitung23/
 venv/
 build_venv/
 ENV/
 env.bak/
 venv.bak/
-.myenv
