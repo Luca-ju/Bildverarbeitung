@@ -92,12 +92,12 @@ def text_recog_util(text, letter_not):
     from scipy.ndimage import binary_dilation as dilate
     ## TODO
     
-    _, text_binary = cv.threshold(text, 0.8, 1, cv.THRESH_BINARY_INV)
-    _, letter_binary = cv.threshold(letter_not, 0.8, 1, cv.THRESH_BINARY)
+    _, text_binary = cv.threshold(text, 0.8, 1, cv.THRESH_BINARY_INV) # binary mask of text
+    _, letter_binary = cv.threshold(letter_not, 0.8, 1, cv.THRESH_BINARY) # binary mask of letter
 
     # Perform erosion and dilation operations
     #kernel = np.ones((3, 3), np.uint8)
-    img_eroded = erode(text_binary, letter_binary)
-    img_dilated = dilate(img_eroded, letter_binary)
+    img_eroded = erode(text_binary, letter_binary) # erode
+    img_dilated = dilate(img_eroded, letter_binary) # dilate
 
     return img_dilated
